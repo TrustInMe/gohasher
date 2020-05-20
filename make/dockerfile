@@ -1,0 +1,12 @@
+FROM golang:latest
+
+COPY . /make
+
+WORKDIR /make
+
+RUN make
+
+EXPOSE 80 8000
+
+CMD ["go","run", "./main/app"]
+
