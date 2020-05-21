@@ -1,0 +1,11 @@
+language: go
+
+go:
+    - "1.13.5"
+
+services:
+    - docker
+
+script:
+    - docker-compose up
+    - go test ./make/main/app/main_test.go

@@ -11,8 +11,8 @@ import (
 
 // PhraseHash : Phrase - comming string, Hash - hash of Phrase
 type PhraseHash struct {
-	Phrase string
-	Hash   int
+	Phrase string `json:"phrase"`
+	Hash   int    `json:"hash"`
 }
 
 // Converting hexdigest string to int64, then int

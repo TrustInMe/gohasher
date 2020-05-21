@@ -8,5 +8,9 @@ RUN make
 
 EXPOSE 80 8000
 
-CMD ["go","run", "./main/app"]
+RUN pwd
+
+RUN ls
+
+CMD ["go","run", "./main/app/main.go"]
 
