@@ -2,8 +2,6 @@ version: '3'
 
 services:
   gohaser:
-    build: ./make
-    volumes:
-      - ./make:/make
+    image: "trustinme/gohasher:latest"
     ports:
       - "80:8000"
